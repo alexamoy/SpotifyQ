@@ -15,4 +15,8 @@ describe('sortByStrings', function () {
     expect(sortByStrings('weather', 'therapyw')).to.eql('theeraw');
   });
 
+  it('given a string s, sort that string by the order they occur in string t ', function () {
+    expect(sortByStrings('goodbye', 'gobew')).to.eql('goobe');
+  });
+
 });

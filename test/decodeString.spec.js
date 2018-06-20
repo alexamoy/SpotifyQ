@@ -15,4 +15,8 @@ describe('decodeString', function () {
     expect(decodeString('2[b3[a]]')).to.eql('baaabaaa');
   });
 
+  it('given an encoded string, returns its corresponding decoded string', function () {
+    expect(decodeString('2[xd3[2[c]]')).to.eql('xdccccccxdcccccc');
+  });
+
 });
